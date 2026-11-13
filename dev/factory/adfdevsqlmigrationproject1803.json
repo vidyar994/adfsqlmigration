@@ -1,0 +1,15 @@
+{
+	"name": "adfdevsqlmigrationproject1803",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a714ec8-060c-45d3-97ff-38cfc1e6b8c5",
+		"tenantId": "e688e14d-93b6-462a-a4e5-694584d2c3ec"
+	}
+}

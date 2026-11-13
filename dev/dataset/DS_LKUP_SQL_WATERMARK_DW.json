@@ -1,0 +1,13 @@
+{
+	"name": "DS_LKUP_SQL_WATERMARK_DW",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKUP_SQL_WATERMARK_DW",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

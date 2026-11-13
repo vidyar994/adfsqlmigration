@@ -1,0 +1,11 @@
+{
+	"name": "LS_AZURE_KEY_VAULT1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://keyvaluedevsqlmigration.vault.azure.net/"
+		}
+	}
+}
