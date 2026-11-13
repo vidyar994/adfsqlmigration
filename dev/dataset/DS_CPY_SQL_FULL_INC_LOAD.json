@@ -1,0 +1,22 @@
+{
+	"name": "DS_CPY_SQL_FULL_INC_LOAD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_CPY_SQL_FULL_INC_LOAD",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schemaname": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableSchema"
+			},
+			"tablename": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableName"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
