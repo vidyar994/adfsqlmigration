@@ -1,0 +1,27 @@
+{
+	"name": "LS_UPD_WATERMARK_TABLE",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "PV",
+			"database": "sqlmigration",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "PV\\premc",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AZURE_KEY_VAULT1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqldbpassword"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
