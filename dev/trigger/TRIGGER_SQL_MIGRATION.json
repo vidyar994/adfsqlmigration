@@ -1,0 +1,24 @@
+{
+	"name": "TRIGGER_SQL_MIGRATION",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_PARENT_ORCHESTRATION",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-11-14T23:40:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
