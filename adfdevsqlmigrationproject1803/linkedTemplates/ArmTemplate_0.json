@@ -746,6 +746,37 @@
 				"[concat(variables('factoryId'), '/datasets/DS_LKUP_SQL_WATERMARK_DW')]",
 				"[concat(variables('factoryId'), '/pipelines/PL_CHILD_INCREMENTAL')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SCH_TRIGGER_SQL_MIGRATION')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "PL_PARENT_ORCHESTRATION",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2026-11-14T23:50:00",
+						"timeZone": "India Standard Time",
+						"schedule": {}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/PL_PARENT_ORCHESTRATION')]"
+			]
 		}
 	]
 }
