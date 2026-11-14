@@ -42,16 +42,13 @@
 		],
 		"parameters": {
 			"TableSchema": {
-				"type": "string",
-				"defaultValue": "dbo"
+				"type": "string"
 			},
 			"TableName": {
-				"type": "string",
-				"defaultValue": "DimCustomer"
+				"type": "string"
 			},
 			"WatermarkColumn": {
-				"type": "string",
-				"defaultValue": "CustomerKey"
+				"type": "string"
 			}
 		},
 		"annotations": []
