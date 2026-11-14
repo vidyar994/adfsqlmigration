@@ -1,5 +1,5 @@
 {
-	"name": "TRIGGER_SQL_MIGRATION",
+	"name": "SCH_TRIGGER_SQL_MIGRATION",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2026-11-14T23:40:00",
+				"startTime": "2026-11-14T23:50:00",
 				"timeZone": "India Standard Time"
 			}
 		}
