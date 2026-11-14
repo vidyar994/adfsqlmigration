@@ -5,8 +5,29 @@
 		"factoryName": {
 			"value": "adfdevsqlmigrationproject1803"
 		},
+		"LS_SINK_CPY_SQL_FULL_INC_LOAD_accountKey": {
+			"value": ""
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_server": {
+			"value": "PV"
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_userName": {
+			"value": "PV\\premc"
+		},
 		"LS_AZURE_KEY_VAULT1_properties_typeProperties_baseUrl": {
 			"value": "https://keyvaluedevsqlmigration.vault.azure.net/"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"value": "PV"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"value": "PV\\premc"
 		},
 		"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_server": {
 			"value": "PV"
@@ -15,6 +36,18 @@
 			"value": "sqlmigration"
 		},
 		"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_userName": {
+			"value": "PV\\premc"
+		},
+		"LS_SINK_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_url": {
+			"value": "https://adlsdevsqlmigration1803.dfs.core.windows.net/"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_server": {
+			"value": "PV"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_userName": {
 			"value": "PV\\premc"
 		},
 		"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {

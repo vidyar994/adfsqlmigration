@@ -7,9 +7,37 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdevsqlmigrationproject1803"
 		},
+		"LS_SINK_CPY_SQL_FULL_INC_LOAD_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SINK_CPY_SQL_FULL_INC_LOAD'"
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "PV"
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "PV\\premc"
+		},
 		"LS_AZURE_KEY_VAULT1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://keyvaluedevsqlmigration.vault.azure.net/"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "PV"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "PV\\premc"
 		},
 		"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_server": {
 			"type": "string",
@@ -20,6 +48,22 @@
 			"defaultValue": "sqlmigration"
 		},
 		"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "PV\\premc"
+		},
+		"LS_SINK_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevsqlmigration1803.dfs.core.windows.net/"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "PV"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_UPD_WATERMARK_TABLE_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "PV\\premc"
 		},
@@ -54,11 +98,35 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_SINK_CPY_SQL_FULL_INC_LOAD_accountKey": {
+						"value": "[parameters('LS_SINK_CPY_SQL_FULL_INC_LOAD_accountKey')]"
+					},
 					"LS_AZURE_KEY_VAULT1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AZURE_KEY_VAULT1_properties_typeProperties_baseUrl')]"
 					},
+					"LS_SINK_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_url": {
+						"value": "[parameters('LS_SINK_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_url')]"
+					},
 					"integrationRuntime1_properties_typeProperties_linkedInfo_resourceId": {
 						"value": "[parameters('integrationRuntime1_properties_typeProperties_linkedInfo_resourceId')]"
+					},
+					"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_server": {
+						"value": "[parameters('DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_server')]"
+					},
+					"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_database": {
+						"value": "[parameters('DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_database')]"
+					},
+					"DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_userName": {
+						"value": "[parameters('DS_CPY_SQL_FULL_INC_LOAD_properties_typeProperties_userName')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_server')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_database')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_userName')]"
 					},
 					"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_server": {
 						"value": "[parameters('LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_server')]"
@@ -68,6 +136,15 @@
 					},
 					"LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_userName": {
 						"value": "[parameters('LS_LKUP_SQL_WATERMARK_DW_properties_typeProperties_userName')]"
+					},
+					"LS_UPD_WATERMARK_TABLE_properties_typeProperties_server": {
+						"value": "[parameters('LS_UPD_WATERMARK_TABLE_properties_typeProperties_server')]"
+					},
+					"LS_UPD_WATERMARK_TABLE_properties_typeProperties_database": {
+						"value": "[parameters('LS_UPD_WATERMARK_TABLE_properties_typeProperties_database')]"
+					},
+					"LS_UPD_WATERMARK_TABLE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_UPD_WATERMARK_TABLE_properties_typeProperties_userName')]"
 					}
 				}
 			},
